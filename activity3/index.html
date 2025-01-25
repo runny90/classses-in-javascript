@@ -21,12 +21,13 @@
         static hello() {
           return "welcome" + x.studentname;
         }
-        hi () {
+        hi() {
           return "Hi " + this.studentname;
         }
       }
       myname = new Student("rayan");
-      document.getElementById("hello").innerHTML = myname.hi();
+      document.getElementById("hello").innerHTML = myname.hello();
+      document.getElementById("hi").innerHTML = myname.hi();
       document.getElementById("welcome").innerHTML = Student.welcome(myname);
     </script>
   </body>
